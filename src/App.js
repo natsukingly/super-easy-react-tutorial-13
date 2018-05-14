@@ -3,6 +3,9 @@ import './App.css';
 import YSearch from 'youtube-api-search';
 
 import Header from './components/Header/Header';
+import Body from './components/Body/Body';
+import List from './components/Video/List/List';
+
 
 const YOUTUBE_API_KEY = 'AIzaSyC4Zaowu05ZczH-jEwAhIs3iU1JrgKRNk8'
 
@@ -20,6 +23,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Body><List videos={this.state.videos} /></Body>
       </div>
     );
   }
