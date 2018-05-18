@@ -3,7 +3,9 @@ import React from 'react';
 const Body = (props) => {
   return (
     <div>
-      {props.children}
+      <div className="row">
+        {props.children}
+      </div>
     </div>
   );
 };
