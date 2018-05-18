@@ -12,8 +12,7 @@ class Header extends Component {
   render(){
 
     const fontStyle = {
-      fontFamily: 'Luckiest Guy',
-      fontFamily: 'Bungee'
+      fontFamily: 'Averia Serif Libre',
     }
 
     return(
