@@ -4,7 +4,16 @@ import Item from '../Item/Item';
 const List = (props) => {
 
   const Items = props.videos.map((video) => {
-    return <Item video={video} key={video.id.videoId}/>;
+    if(props.selectedVideo !== video){
+      return (
+        <Item
+          video={video}
+          key={video.id.videoId}
+          onVideoClicked={props.onVideoClicked}
+        />
+      );
+    }
+    return false;
   });
 
   return (

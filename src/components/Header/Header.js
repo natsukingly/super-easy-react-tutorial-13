@@ -7,6 +7,7 @@ class Header extends Component {
 
   onInputChangeHandler = (event) => {
     this.setState({keyword: event.target.value});
+    this.props.onKeywordChanged(event.target.value);
   }
 
   render(){
